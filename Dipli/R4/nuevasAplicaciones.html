@@ -1,0 +1,36 @@
+<!--
+Nuevas funciones----------------------------------------------------------
+    FUNCION seleccionarRangoNumerico: pide a los jugadores que ingrese el rango de
+    numeros donde quieren jugar. 
+    FUNCION pistaCambiada: si el rango elegido por los jugadores es meramente positivo
+    entonces esta funcion cambia la pista de esMayorQueCero por la pista es multiploDeCinco,
+    en caso contrario mantiene la pista de esPositivo. 
+    FUNCION reglas: Muestra la reglas a travez de una funcion.
+    FUNCION pregunta aleatoria (switch): seleciona un numero al azar del 0 al 10 el cual le 
+    asociado a una pregunta, y respuesta. Luego se lleva la pregunta a la funcion bonus. 
+
+Modicifacion/arreglos a funciones ya hechas--------------------------------
+  PRIMERO SE DECLARO UNA VARIABLE PARA CONTROLAR EL ESTADO DEL JUEGO 
+            let juegoTerminado = false;
+  FUNCION oportunidad: se utiliza la variable que controla el juego para determinar en que condicion
+  esta el juego (como un interruptor, esta encendido, cuando se ejecura la funcion y se verifica si 
+  el jugador acerto o no cambia el estado del interruptor o sino lo deja como esta)
+  Se agrego un if que determina si el jugador gano la partida en tal caso cambia el estado del juego 
+  a TRUE, felicita al jugador y termina el juego. En caso contrario da un mensaje de aliento 
+  y continua con el juego. 
+  FUNCION bonus: Si se le otorga el bonus al jugador entonces se procede a llamar a la funcion
+  preguntaAleatoria, la cual le pregunta al jugador algo y si el jugador responde bien entonces
+  puede ingresar un nuevo numero sino caso contrario pierde la oportunidad y se asigna el valor 100.
+
+EXTRAS-----------------------------------------------------------------
+  En caso de que se ingrese mal el rango ejemplo (10 - 1), el programa automaticamente selecciona 
+  el rango de (-20 a 40) para que el programa no tenga problemas de ejecucion. 
+  Se agregaron mas emoticones para el placer del jugador y tambien para la experencia, se comento
+  el codigo para un mejor entendimiento. 
+  
+CUESTIONES PARA MEJORAR------------------------------------------------
+  Los mensajes podrian mostrarse diferente.
+  Se podria modificar el funcionamiento de la funcion bonus, ya que tenga un estado y si cambia el estado
+  de la oportunidad directamente y no que muestre ese cartel de si ganaste o no el bonus. 
+  Pero bueno queda para un futuro. 
+-->
